@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoPhone</title>
+    <link rel="icon" href="https://img.icons8.com/ios/50/000000/smartphone.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100" style="overflow-x: hidden;">
+    <nav class="navbar navbar-expand-md bg-light">
+        <div class="container-fluid d-flex align-items-center">
+            <img src="https://images.vexels.com/media/users/3/157364/isolated/preview/531136491af532584fc329a964f53742-icono-de-telefono-movil-de-mano.png" style="width: 5%;"  alt="Logo" class="me-2 float-left"> <!--Alternativa al float left-->
+            <h6 class="display-6 me-2">TecnoPhone</h6>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav"> <!--Uso de d-flex-->
+                <ul class="navbar-nav ms-auto"> <!--Uso de d-flex-->
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Teléfonos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Métodos de Pago</a>
+                    </li>
+                </ul>
+                <form class="d-flex flex-column flex-md-row ms-2">
+                    <div class="d-flex flex-grow-1">
+                        <input class="form-control me-2" type="search" placeholder="Busca una referencia" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </div>
+                    <button class="btn btn-secondary d-md-none mt-2" type="button">Contacto</button>
+                    <button class="btn btn-secondary d-none d-md-block ms-2" type="button">Contacto</button> <!--Uso de d-none d-md-block ms-2-->
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+        
+
+
+        <!--Seccion para super heroes-->
+        <div class="bg-primary text-white text-center p-3 p-md-5"> <!--text center y paading responsivo-->
+            <h1 class="text-uppercase">Bienvenido a TecnoPhone</h1> <!--text uppercase-->
+            <p>La mejor tecnología al alcance de tu mano.</p>
+        </div>
+        
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Características Destacadas</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4"> <!--Uso de flexbox-->
+                <div class="col">
+                    <div class="card border-primary"> <!--Uso de bordes-->
+                        <div class="card-body text-center">
+                            <img src="https://s1.elespanol.com/2017/12/29/elandroidelibre/el_androide_libre_273234777_179826773_1024x576.jpg" alt="Características 1" class="mb-3" style="color: #007bff; width:71%;">
+                            <h5 class="card-title">Procesadores Snapdragon</h5>
+                            <p class="card-text">Nuestros dispositivos incluyen a la confiable y poderosa marca de chipsets para dispositivos moviles 
+                            Qualcomm®, excelentes para la emulacion de videojuegos y administración de bateria.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-success">
+                        <div class="card-body text-center">
+                            <img src="https://cdn.icon-icons.com/icons2/1776/PNG/512/batterychargingstatus_114301.png" alt="Características 2" class="mb-3" style="color: #28a745; width:40%;"> <!--Colores tematicos-->
+                            <h5 class="card-title">Batería de Larga Duración</h5>
+                            <p class="card-text">Disfruta de un día completo de uso sin preocuparte, nuestros dispositivos cuentan con la enorgomia 
+                            suficiente para que no te quedes desconectado, contamos con dispositivos de gran amperaje :D</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-danger">
+                        <div class="card-body text-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWf5giKK9Ybjy6bN49IMUMw27deiAPqTWDiQ&s" alt="Características 3" class="mb-3" style="color: #dc3545; width:44%;">
+                            <h5 class="card-title">Cámaras de Alta Calidad</h5>
+                            <p class="card-text">Captura momentos con una claridad impresionante, incorporamos colaboraciones con las marcas
+                            mas prestigiosas si a fotografia se refiere, tenemos colaboracion con SONY y SAMSUNG.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Carrusel de telefonos celulares-->
+
+
+
+        <div class="container mt-5">
+            <h1 class="display-6" style="text-align: center; margin-bottom: 6%;">¡Nuestros mejores dispositivos!</h1>
+            <div id="phoneCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- Dispositivo 1 -->
+                    <div class="carousel-item active">
+                        <div class="row align-items-center justify-content-center text-center">
+                            <div class="col-md-6 d-flex justify-content-center">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx8-taifCBcwOzAkVFE9h7gGdL2qV86wLLrg&s" class="img-fluid" alt="Dispositivo 1" style="width: 300px; height: 400px; object-fit: cover; margin-right: 20px;">
+                            </div>
+                            <div class="col-md-6 ps-4">
+                                <h5>Poco X6 Pro</h5>
+                                <p class="mb-2"><strong>Procesador:</strong> MediaTek Dimensity 8300 Ultra</p>
+                                <p class="mb-2"><strong>Pantalla:</strong> 6,67 pulgadas 1.5K Amoled 120Hz</p>
+                                <p class="mb-2"><strong>Cámara:</strong> 64 megapíxeles, apertura f/1.7, OIS</p>
+                                <p class="mb-2"><strong>Batería:</strong> 5000 mAh, carga rápida 67W</p>
+                                <p class="mb-2"><strong>Ram:</strong> 8 GB LPDDR5X</p>
+                                <p class="mb-2"><strong>Almacenamiento:</strong> 256 GB UFS 4.0</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Dispositivo 2 -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center justify-content-center text-center">
+                            <div class="col-md-6 d-flex justify-content-center">
+                                <img src="https://i05.appmifile.com/952_item_es/17/05/2024/ca80051792e1fd42d2b8480d0b2dce4a!400x400!85.png" class="img-fluid" alt="Dispositivo 2" style="width: 300px; height: 400px; object-fit: cover; margin-right: 20px;">
+                            </div>
+                            <div class="col-md-6 ps-4">
+                                <h5>Poco F6</h5>
+                                <p class="mb-2"><strong>Procesador:</strong> Snapdragon 8s Gen 3</p>
+                                <p class="mb-2"><strong>Pantalla:</strong> 6,67 pulgadas 1.5K Amoled 120Hz</p>
+                                <p class="mb-2"><strong>Cámara:</strong> Sony IMX882, 50 MP</p>
+                                <p class="mb-2"><strong>Batería:</strong> 5000 mAh, carga rápida 90W</p>
+                                <p class="mb-2"><strong>Ram:</strong> 8 GB LPDDR5X</p>
+                                <p class="mb-2"><strong>Almacenamiento:</strong> 256 GB UFS 4.0</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Dispositivo 3 -->
+                    <div class="carousel-item">
+                        <div class="row align-items-center justify-content-center text-center">
+                            <div class="col-md-6 d-flex justify-content-center">
+                                <img src="https://m.media-amazon.com/images/I/61ZGBMggKWL.jpg" class="img-fluid" alt="Dispositivo 3" style="width: 300px; height: 400px; object-fit: cover; margin-right: 20px;">
+                            </div>
+                            <div class="col-md-6 ps-4">
+                                <h5>Infinix GT20 PRO</h5>
+                                <p class="mb-2"><strong>Procesador:</strong> MediaTek Dimensity 8200 Ultimate</p>
+                                <p class="mb-2"><strong>Pantalla:</strong> 6,67 pulgadas Full HD Amoled 144Hz</p>
+                                <p class="mb-2"><strong>Cámara:</strong> 108 MP, f/1.8, 24mm AF, OIS</p>
+                                <p class="mb-2"><strong>Batería:</strong> 5000 mAh, carga rápida 45W</p>
+                                <p class="mb-2"><strong>Ram:</strong> 12 GB LPDDR5X</p>
+                                <p class="mb-2"><strong>Almacenamiento:</strong> 256 GB UFS 4.0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+               
+        
+        
+                <!-- Controles del Carrusel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#phoneCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: black;"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#phoneCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: black;"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+        
+
+        <!--Informacion sobre TecnoPhone-->
+        <div class="container">
+                <section class="info my-5">
+                    <h2 class="display-5"><strong>¡Sobre Nosotros!</strong></h2>
+                    <p>
+                    TecnoPhone surge como una sucursal y distribuidora de teléfonos móviles celulares, estableciéndose en diversas localidades 
+                    de Colombia. Nuestra misión es proporcionar una amplia variedad de dispositivos móviles que se ajusten a las necesidades y 
+                    gustos de todos nuestros clientes. Desde celulares básicos, ideales para aquellos que buscan funcionalidad y simplicidad, 
+                    hasta modelos de alta gama diseñados para los más exigentes, que demandan lo último en tecnología y rendimiento.
+                    </p>
+                    <p>
+                    En TecnoPhone, nos esforzamos por ofrecer productos de calidad y un servicio excepcional, asegurando que cada cliente 
+                    encuentre el dispositivo perfecto que se adapte a su estilo de vida. Creemos que la tecnología debe estar al alcance de 
+                    todos, y por eso nos comprometemos a mantener un catálogo diverso y accesible.
+                    </p>
+                    <h4>¡Visita a los grandes de la telefonía!</h4><br>
+                    <ul style="list-style-type: none; padding: 0;">
+                        <li style="margin-bottom: 20px; display: flex; align-items: center;">
+                            <img src="https://w7.pngwing.com/pngs/283/160/png-transparent-xiaomi-logo-portable-document-format-smartphone-encapsulated-postscript-free-angle-electronics-text-thumbnail.png" alt="Logo de Xiaomi" style="width: 50px; height: auto; margin-left: 25px; margin-right:20px;"> 
+                            <p style="margin: 0;"><em>Xiaomi ha logrado convertirse rápidamente en una de las compañías de teléfonos celulares principales en el mundo. Descubre más sobre su innovadora tecnología:</em> 
+                                <a href="https://www.mi.com/co/" target="_blank">Xiaomi</a>
+                            </p>
+                        </li>
+                        <li style="margin-bottom: 20px; display: flex; align-items: center;">
+                            <img src="https://w7.pngwing.com/pngs/988/826/png-transparent-samsung-galaxy-s8-logo-samsung-electronics-business-adidas-blue-company-text-thumbnail.png" alt="Logo de Samsung" style="width: 85px; height: auto; margin-right: 10px; margin-left: 5px;"> 
+                            <p style="margin: 0;"><em>Una de las más grandes desde sus inicios, reconocida por fabricar electrodomestico tecnologicos, conoce a uno de los gigantes de la tecnología:</em> 
+                                <a href="https://acortar.link/s70Olp" target="_blank">Samsung</a>
+                            </p>
+                        </li>
+                        <li style="margin-bottom: 20px; display: flex; align-items: center;">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7ZEewbrHLU6cC2Ha4AIBAQVqkF_NDfih5GQ&s" alt="Logo de Apple" style="width: 50px; height: auto; margin-left: 25px; margin-right:20px;"> 
+                            <p style="margin: 0;"><em>Apple siempre ha simbolizado prestigio por su durabilidad y calidad de productos en su optimizacion e increible calidad en fotografica:</em> 
+                                <a href="https://www.apple.com/co/iphone/" target="_blank">iPhone</a>
+                            </p>
+                        </li>
+                    </ul>
+
+                    <!--Seccion de opiniones jijijija-->
+
+                    <div class="container">
+                        <h3 class="display-4" style="text-align: center;">¿Cuál es tu marca favorita y por qué? ¡Déjanos tu opinión!</h3>
+                        <br>
+                        <form onsubmit="return false;">
+                            <div class="row mb-3">
+                                <div class="col-md-10">
+                                    <input type="text" id="opinion" placeholder="Escribe tu respuesta..." aria-label="opinion" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    <button type="submit" onclick="document.getElementById('opinion').value = '';" style="padding: 10px 20px; border-radius: 5px; border: none; background-color: #28a745; color: white; cursor: pointer; font-size: 16px; width: 100%;">
+                                        Enviar
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    
+                    <!--Seccion de videasos parcero-->
+                    <section class="videos my-5">
+                        <h2 class="display-5">¡Videos de SmartPhones!</h2> <br>
+                        <h4 class="Samsung">Mira lo último en telefonía</h4>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <iframe width="100%" height="215" src="https://www.youtube.com/embed/GZ-xGBTvtO4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <iframe width="100%" height="215" src="https://www.youtube.com/embed/GDlkCkcIqTs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <iframe width="100%" height="215" src="https://www.youtube.com/embed/MZynapzPtJA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+        </div>
+        
+        
+            
+        
+        
+        
+        <!--Formulario muy formulariudo-->
+        <div class="container">
+            <br>
+            <h1>¡Recibe las ultimas noticias!</h1> 
+            <form>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Nombre y apellido</span>
+                    <input type="text" aria-label="Nombres" placeholder="Nombre" class="form-control">
+                    <input type="text" aria-label="Apellidos" placeholder="Apellido" class="form-control">
+                </div>
+        
+                <div class="row mb-3">
+                    <div class="col-md">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" placeholder="Example@gmail.com" aria-label="First name">
+                    </div>
+                </div>
+        
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">Dirección</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresa tu dirección">
+                </div>
+        
+        
+        
+                <div class="input-group mb-3">
+                    <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label">Ciudad</label>
+                        <select class="form-select" id="validationCustom044" required>
+                            <option selected disabled value="">Escoge</option>
+                            <option>Pereira</option>
+                            <option>Armenia</option>
+                            <option>Manizales</option>
+                            <option>Medellin</option>
+                        </select>
+                        <div class="invalid-feedback">Por favor proporciona una ciudad válida.</div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label">Departamento</label>
+                        <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Escoge</option>
+                            <option>Risaralda</option>
+                            <option>Quindio</option>
+                            <option>Nariño</option>
+                            <option>Amazonas</option>
+                        </select>
+                        <div class="invalid-feedback">Por favor selecciona un departamento válido.</div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom05" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">Por favor proporciona un zip válido.</div>
+                    </div>
+                </div>
+        
+                <div class="row mb-3">
+                    <div class="col">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">Colombiano</label>
+                    </div>
+                    <div class="col">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked="">
+                        <label class="form-check-label" for="flexRadioDefault2">Extranjero</label>
+                    </div>
+        
+                    <div class="col-md-6">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">Acepto los términos y condiciones</label>
+                    </div>
+                </div>
+        
+                <div class="col-12 mb-3">
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+        
+        <!--Footer-->
+        <footer class="bg-light text-center text-lg-start p-4 mt-5 d-flex flex-column align-items-center footer-border" style="border-top: 4px solid #007bff; margin-top: 20px;"> <!--Flexbox para alineacion --> <!--bordes decorativos-->
+            <div class="container p-4 d-flex flex-column align-items-center"> <!--Margenes y paddings-->
+                <h4 class="mb-3">Contacto</h4>
+                <div class="d-flex flex-column align-items-center">
+                    <p>Email: <a href="mailto:info@TecnoPhone.com">info@TecnoPhone.com</a></p>
+                    <p>Teléfono: +57 123 456 7890</p>
+        
+                    <h4 class="mb-3">Síguenos en redes sociales</h4>
+                    <ul class="list-unstyled d-flex justify-content-center mb-4">
+                        <li class="me-3">
+                            <a href="https://www.facebook.com" target="_blank" class="text-decoration">Facebook</a>
+                        </li>
+                        <li class="me-3">
+                            <a href="https://www.instagram.com" target="_blank" class="text-decoration">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://www.twitter.com" target="_blank" class="text-decoration">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+        
+                <p class="mt">© 2024 TecnoPhone. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+        
+        
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
